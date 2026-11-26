@@ -1,0 +1,7 @@
+{
+  "name": "request-type-mods",
+  "owner": { "name": "alexbike1219" },
+  "plugins": [
+    { "name": "request-type", "source": "./request-type", "description": "輸入框上方的需求類型按鈕列，送出時自動加上【類型：X】前綴" }
+  ]
+}
