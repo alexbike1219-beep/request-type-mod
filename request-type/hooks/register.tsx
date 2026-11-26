@@ -5,7 +5,7 @@ import type { Register } from 'claude-code'
 const MODEL_OF: Record<string, string> = {
   細節調整: 'sonnet',
   功能製作: 'sonnet',
-  除錯: 'opus',
+  除錯: 'sonnet',
   規劃調整: 'opus',
   諮詢: 'sonnet',
   // 補充：沿用上一輪的模型，見下方
