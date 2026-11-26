@@ -16,7 +16,7 @@ const selected = atom({ plugin: 'request-type', key: 'selected' } as const, null
 const opus = atom({ plugin: 'request-type', key: 'opus' } as const, false)
 
 const HINT_PICKED = (t: string) =>
-  `使用者已用介面選定需求類型「${t}」。不要顯示類型選單，直接依 tiered-model-workflow 的「${t}」流程進行。主對話的模型已由介面依類型切換好，不要為了換模型而另派子代理。`
+  `使用者已用介面選定需求類型「${t}」。不要顯示類型選單。先看可用的 skill 清單：若有 tiered-model-workflow，本對話還沒載入過就先用 Skill 工具載入，再依其中「${t}」的流程進行（先對齊理解、依規模分級、遵守確認點）；本對話已載入過就不必重載，直接依「${t}」的流程進行。若沒有這個 skill，就照一般方式處理。主對話的模型已由介面依類型切換好，不要為了換模型而另派子代理。`
 const HINT_NONE =
   '使用者未選需求類型。不要顯示類型選單，當作一般使用，照平常方式回答。'
 
