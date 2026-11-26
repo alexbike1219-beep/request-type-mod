@@ -1,6 +1,6 @@
 {
   "name": "request-type",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Prompt 上方的需求類型按鈕列；送出時自動加上【類型：X】前綴並依類型切換 Opus／Sonnet，送出後清除。不額外呼叫模型。",
   "types": "./types/index.d.ts",
   "license": "MIT",
